@@ -1,6 +1,6 @@
-# acc-kubeconfig-cli
+# kubectm
 
-[![CodeQL](https://github.com/johnybradshaw/acc-kubeconfig-cli/actions/workflows/codeql.yml/badge.svg)](https://github.com/johnybradshaw/acc-kubeconfig-cli/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/johnybradshaw/kubectm/actions/workflows/codeql.yml/badge.svg)](https://github.com/johnybradshaw/kubectm/actions/workflows/codeql.yml)
 
 ## Overview
 
