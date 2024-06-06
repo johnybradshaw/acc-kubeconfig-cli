@@ -34,7 +34,7 @@ kind: Config
 clusters: []
 contexts: []
 users: []
-current-context: ""`), os.ModePerm)
+current-context: ""`), 0600)
 		if err != nil {
 			fmt.Printf("%sError:%s Failed to create empty kubeconfig file: %v\n", constants.ColorRed, constants.ColorReset, err)
 			os.Exit(1)
@@ -83,7 +83,7 @@ func UpdateContextName(kubeconfigPath, oldContextName, newContextName string) er
 		return err
 	}
 
-	err = os.WriteFile(kubeconfigPath, updatedData, os.ModePerm)
+	err = os.WriteFile(kubeconfigPath, updatedData, 0600)
 	if err != nil {
 		return err
 	}
@@ -103,10 +103,11 @@ func MergeKubeconfigs(kubeconfig string, kubeconfigPath string) error {
 	cmd := exec.Command("kubectl", "config", "view", "--flatten")
 	cmd.Env = append(os.Environ(), fmt.Sprintf("KUBECONFIG=%s", kubeconfig))
 	mergedKubeconfig, err := cmd.Output()
+
 	if err != nil {
 		return err
 	}
-	err = os.WriteFile(kubeconfigPath+".tmp", mergedKubeconfig, os.ModePerm)
+	err = os.WriteFile(kubeconfigPath+".tmp", mergedKubeconfig, 0600)
 	if err != nil {
 		return err
 	}
