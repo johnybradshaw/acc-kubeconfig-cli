@@ -6,7 +6,7 @@ import (
 	"os/exec"
 	"path/filepath"
 
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/constants" // Import the constants package
+	"github.com/johnybradshaw/kubectm/internal/constants" // Import the constants package
 	"gopkg.in/yaml.v2"
 )
 

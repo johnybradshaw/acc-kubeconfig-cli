@@ -5,7 +5,7 @@ import (
 	"os"
 	"os/exec"
 
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/constants"
+	"github.com/johnybradshaw/kubectm/internal/constants"
 )
 
 // CheckDependencies checks if the required dependencies are installed.
@@ -65,5 +65,5 @@ func DisplayHelp() {
 	fmt.Printf("  %sLINODE_API_TOKEN%s   Linode API token for authentication (optional)\n", constants.ColorCyan, constants.ColorReset)
 	fmt.Println()
 	fmt.Println("For more information and source code, visit:")
-	fmt.Println("https://github.com/johnybradshaw/acc-kubeconfig-cli")
+	fmt.Println("https://github.com/johnybradshaw/kubectm")
 }

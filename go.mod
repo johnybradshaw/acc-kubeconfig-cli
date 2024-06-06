@@ -1,4 +1,4 @@
-module github.com/johnybradshaw/acc-kubeconfig-cli
+module github.com/johnybradshaw/kubectm
 
 go 1.22.3
 

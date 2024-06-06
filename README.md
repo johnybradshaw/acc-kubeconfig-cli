@@ -13,7 +13,7 @@ The `acc-kubeconfig-cli` requires you to have already set your Linode API token 
 To get started, run the following command:
 
 ```bash
-./acc-kubeconfig-cli
+./kubectm
 ```
 
 It will merge the kubeconfig files of all Linode Kubernetes Engine (LKE) clusters into a single file, and the outut will look similar to:
@@ -27,7 +27,7 @@ Success: Kubeconfig updated successfully
 ### --help
 
 ```bash
-❯ ./acc-kubeconfig-cli --help
+❯ ./kubectm --help
 Usage: acc-kubeconfig-cli [--debug] [--help]
 Merges the kubeconfig files of all Linode Kubernetes Engine (LKE) clusters into a single file.
 
@@ -39,7 +39,7 @@ Environment Variables:
   LINODE_API_TOKEN   Linode API token for authentication (optional)
 
 For more information and source code, visit:
-https://github.com/johnybradshaw/acc-kubeconfig-cli
+https://github.com/johnybradshaw/kubectm
 ```
 
 ## Build Instructions

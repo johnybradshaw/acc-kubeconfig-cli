@@ -7,10 +7,10 @@ import (
 	"os"
 	"strings"
 
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/constants"
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/kubeconfig"
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/linode"
-	"github.com/johnybradshaw/acc-kubeconfig-cli/pkg/utils"
+	"github.com/johnybradshaw/kubectm/internal/constants"
+	"github.com/johnybradshaw/kubectm/internal/kubeconfig"
+	"github.com/johnybradshaw/kubectm/internal/linode"
+	"github.com/johnybradshaw/kubectm/pkg/utils"
 )
 
 // main is the entry point of the program.

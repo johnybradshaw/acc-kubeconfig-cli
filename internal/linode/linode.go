@@ -13,9 +13,9 @@ import (
 	"gopkg.in/yaml.v2"
 
 	// Import local packages
-	"github.com/johnybradshaw/acc-kubeconfig-cli/internal/constants"
-	kc "github.com/johnybradshaw/acc-kubeconfig-cli/internal/kubeconfig"
-	"github.com/johnybradshaw/acc-kubeconfig-cli/pkg/utils"
+	"github.com/johnybradshaw/kubectm/internal/constants"
+	kc "github.com/johnybradshaw/kubectm/internal/kubeconfig"
+	"github.com/johnybradshaw/kubectm/pkg/utils"
 )
 
 // CreateLinodeClient creates a Linode client using the provided API token.
